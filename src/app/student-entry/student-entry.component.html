@@ -5,59 +5,59 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label">name</label>
-                    <input type="text" class="form-control">
+                    <input name="name" [(ngModel)]="name" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xl-6 col-xxl-6">
                     <label class="form-label">Roll NO</label>
-                    <input type="text" class="form-control">
+                    <input name="roll" [(ngModel)]="roll" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xl-6 col-xxl-6">
                     <label class="form-label">Admission Number</label>
 
-                    <input type="text" class="form-control">
+                    <input name="adno" [(ngModel)]="adno" type="text" class="form-control">
 
 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xl-6 col-xxl-6">
                     <label class="form-label">Mobile NO</label>
 
-                    <input type="text" class="form-control">
+                    <input name="phone" [(ngModel)]="phone" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12">
                     <label class="form-label">College Name</label>
 
-                    <input type="text" class="form-control">
+                    <input name="clgname" [(ngModel)]="clgname" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xl-6 col-xxl-6">
                     <label class="form-label">Parent Name</label>
 
-                    <input type="text" class="form-control">
+                    <input name="pname" [(ngModel)]="pname" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xl-6 col-xxl-6">
                     <label class="form-label">Parent Mobile Number</label>
 
-                    <input type="text" class="form-control">
+                    <input name="pmobile" [(ngModel)]="pmobile" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12">
                     <label class="form-label">Username</label>
 
-                    <input type="text" class="form-control">
+                    <input name="username" [(ngModel)]="username" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12">
                     <label class="form-label">Password</label>
 
-                    <input type="text" class="form-control">
+                    <input name="password" [(ngModel)]="password" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12 col-xxl-12">
                     
-                    <button class="btn btn-success">submit</button>
+                    <button (click)="readValues()" class="btn btn-success">submit</button>
 
                 </div>
             </div>
